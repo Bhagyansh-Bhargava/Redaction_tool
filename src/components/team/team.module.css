@@ -1,0 +1,59 @@
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* bg-design */
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(21, 24, 38, 0.50) 0%, rgba(21, 24, 38, 0.60) 100%);
+    box-shadow: -10px 10px 15.9px 0px rgba(134, 190, 231, 0.25);
+    filter: blur(0.25px);
+    backdrop-filter: blur(4px);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.role{
+    margin-bottom: 1rem;
+}
+
+.linkp{
+    text-decoration: underline;
+}
+
+.imgDiv{
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.imgp{
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}

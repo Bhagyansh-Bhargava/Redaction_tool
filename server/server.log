@@ -1,0 +1,74 @@
+2024-09-14 20:46:45,337 - INFO - Decrypted text: hello
+2024-09-14 20:46:46,340 - INFO - Text redacted successfully.
+2024-09-14 20:47:56,486 - INFO - Decrypted text: hello
+2024-09-14 20:47:57,489 - INFO - Text redacted successfully.
+2024-09-14 20:48:35,418 - INFO - Decrypted text: My name is Aryan and I live at walter street
+2024-09-14 20:48:36,294 - INFO - Text redacted successfully.
+2024-09-14 20:58:24,095 - INFO - Decrypted text: Bhagyansh is born on 21 January 2004. He is married to Roma
+2024-09-14 20:58:25,024 - INFO - Text redacted successfully.
+2024-09-14 20:58:52,260 - INFO - Decrypted text: Bhagyansh is born on 21 January 2004. He is married to Roma. He is 20 years old
+2024-09-14 20:58:53,138 - INFO - Text redacted successfully.
+2024-09-14 20:59:27,151 - INFO - Decrypted text: Bhagyansh is born on 21 January 2004. He is married to Roma. He is 20 years old.
+ His api key is "ABSUGfdf6545"
+2024-09-14 20:59:28,165 - INFO - Text redacted successfully.
+2024-09-14 20:59:56,531 - INFO - Decrypted text: Bhagyansh is born on 21 January 2004. He married to Roma last year. He is 20 years old.
+ His api key is "ABSUGfdf6545"
+2024-09-14 20:59:57,446 - INFO - Text redacted successfully.
+2024-09-14 21:03:59,046 - ERROR - Error during redaction: tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2024-09-14 21:06:43,557 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:09:40,082 - ERROR - Error during redaction: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+2024-09-14 21:10:44,866 - ERROR - Error during redaction: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+2024-09-14 21:11:45,066 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:12:34,519 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:13:36,700 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:14:50,194 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:15:08,544 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:15:43,254 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:16:53,812 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:17:56,982 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:20:09,567 - ERROR - Error during redaction: [Errno 13] Permission denied: '/home/ubuntu/new_volume/lab_aryan/piret/tesseract.exe'
+2024-09-14 21:22:56,952 - ERROR - Error during redaction: (1, 'Error opening data file /home/ubuntu/lab_archana/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2024-09-14 21:24:56,842 - ERROR - Error during redaction: (1, 'Error opening data file /home/ubuntu/lab_archana/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2024-09-14 21:25:37,718 - ERROR - Error during redaction: (1, 'Error opening data file /home/ubuntu/lab_archana/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2024-09-14 21:27:12,040 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 21:50:10,256 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 21:50:55,826 - INFO - Decrypted text: My name is aryan
+2024-09-14 21:50:56,802 - INFO - Text redacted successfully.
+2024-09-14 21:51:06,027 - INFO - Decrypted text: My name is aryan
+2024-09-14 21:51:06,898 - INFO - Text redacted successfully.
+2024-09-14 21:51:16,239 - INFO - Decrypted text: My name is aryan, born on 5th october
+2024-09-14 21:51:17,113 - INFO - Text redacted successfully.
+2024-09-14 21:52:06,645 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 21:54:04,110 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 21:56:08,288 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 21:58:58,626 - ERROR - Error during redaction: object Response can't be used in 'await' expression
+2024-09-14 22:03:54,596 - INFO - Decrypted text: Hello how are you janvi
+2024-09-14 22:03:55,465 - INFO - Text redacted successfully.
+2024-09-14 23:05:25,569 - INFO - Decrypted text: Janvi is here
+2024-09-14 23:05:26,441 - INFO - Text redacted successfully.
+2024-09-14 23:05:34,169 - INFO - Decrypted text: Janvi is here. Bhagyansh married roma
+2024-09-14 23:05:35,044 - INFO - Text redacted successfully.
+2024-09-14 23:06:05,899 - INFO - Decrypted text: Janvi is here. Bhagyansh married roma. have a child, his age is 1
+2024-09-14 23:06:06,820 - INFO - Text redacted successfully.
+2024-09-14 23:06:12,715 - INFO - Decrypted text: Janvi is here. Bhagyansh married roma. have a child, his age is 1
+2024-09-14 23:06:13,601 - INFO - Text redacted successfully.
+2024-09-15 00:13:32,110 - INFO - Decrypted text: Hello my name is Aryan
+2024-09-15 00:13:33,100 - INFO - Text redacted successfully.
+2024-09-15 00:13:55,766 - ERROR - Error during redaction: (1, 'Error opening data file /home/ubuntu/tes/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2024-09-15 00:14:45,905 - ERROR - Error during redaction: (1, 'Error opening data file /home/ubuntu/tes/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2024-09-15 01:14:56,736 - INFO - Decrypted text: Bhagyansh married Roma, Age is 20. Credit card score is 253 url is https://www.sdfh.com
+2024-09-15 01:14:57,727 - INFO - Text redacted successfully.
+2024-09-15 01:52:33,711 - INFO - Decrypted text: My name is Aryan
+2024-09-15 01:52:34,680 - INFO - Text redacted successfully.
+2024-09-15 01:55:42,255 - INFO - Decrypted text: this is janvi
+2024-09-15 01:55:43,155 - INFO - Text redacted successfully.
+2024-09-15 02:02:56,753 - INFO - Decrypted text: I'm Shivank and I'm 21 years old. I was born on 18/02/2003.
+2024-09-15 02:02:57,753 - INFO - Text redacted successfully.

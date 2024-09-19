@@ -1,0 +1,250 @@
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* bg-design */
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(21, 24, 38, 0.50) 0%, rgba(21, 24, 38, 0.60) 100%);
+    box-shadow: -10px 10px 15.9px 0px rgba(134, 190, 231, 0.25);
+    filter: blur(0.25px);
+    backdrop-filter: blur(4px);
+  }
+
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .mainTitle{
+    text-align: center;
+    margin: 7rem 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* text-align: center; */
+  }
+
+  .titleText{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  .redactArea {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .inputArea,
+  .outputArea {
+    flex: 1;
+    background-color: #1f2937;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .textInput {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    resize: vertical;
+  }
+  
+  .redactedContent {
+    position: relative;
+    min-height: 100px;
+  }
+  
+  .redactedText {
+    font-family: monospace;
+    word-break: break-all;
+  }
+  
+  .copyButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #4b5563;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .copyButton:hover {
+    background-color: #6b7280;
+  }
+  
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .redactButton,
+  .synthButton {
+    flex: 1;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .synthButton:hover , .redactButton:hover{
+    background-color: rgba(0, 0, 0, 0.036);
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .bottomButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filterButton,
+  .imageButton {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .filldiv{
+    margin-bottom: 1rem;
+  }
+  
+  .filterButton {
+    /* background-color: #4b5563;
+    color: #fff; */
+    background-color: #fbbf24;
+    color: #000;
+  }
+  
+  .filterButton:hover {
+    /* background-color: #6b7280; */
+    background-color: #df9109;
+
+  }
+  
+  .imageButton {
+    background-color: #fbbf24;
+    color: #000;
+  }
+  
+  .imageButton:hover {
+    background-color: #f59e0b;
+  }
+  
+  .filterOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+  }
+  
+  @media (max-width: 768px) {
+    .redactArea {
+      flex-direction: column;
+    }
+    
+    .buttonGroup {
+      flex-direction: column;
+    }
+  }
+
+  /* ... (previous styles) */
+
+.filterMenu {
+  position: relative;
+  /* background-color: #1f2937c8; */
+  background-color: rgba(2, 1, 29, 0.5);
+  border: 2px solid #4b5563;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px rgba(5, 1, 33, 0.3);
+  padding: 1rem;
+  z-index: 20;
+  max-height: 20rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .filterMenu {
+    top: -20rem;
+    left: -10rem;
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+}
+
+
+.filterCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterCategoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterCategoryTitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterCheckbox {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #808795;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filterCheckbox:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.filterLabel {
+  color: #bcc1c9;
+  font-size: 0.9rem;
+}

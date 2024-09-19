@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(1, 0, 33, 0.4)), url("/bg1.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: auto 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.cursor-blur {
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  filter: blur(4px);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.brand-name {
+  font-size: 6rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.brand-name.hovered {
+  filter: blur(4px);
+}
+
+.hover-circle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.search-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-text, .hero-visual {
+      max-width: 100%;
+      width: 100%;
+  }
+
+  .hero-visual {
+      margin-top: 2rem;
+  }
+
+  .cta-buttons {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+      font-size: 2.5rem;
+  }
+
+  .brand-name {
+      font-size: 4rem;
+  }
+
+  .hero-subtitle, .hero-description {
+      font-size: 1rem;
+  }
+}

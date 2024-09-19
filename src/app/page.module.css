@@ -1,0 +1,296 @@
+.redactLanding {
+    margin-top: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+  
+.cursorBlur {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    filter: blur(8px);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+ 
+.mainContent {
+    flex-grow: 1;
+    position: relative;
+    z-index: 10;
+}
+  
+.contentWrapper {
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.styleDiv1{
+  height: 4rem;
+}
+  
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+  
+.heroText {
+    flex: 2;
+    max-width: 60%;
+}
+  
+.heroTitle {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 7rem;
+    color: #91B4F4;
+}
+  
+.heroSubtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: #a0a0a0;
+}
+  
+/* .heroDescription {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #a0a0a0;
+} */
+  
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+}
+  
+.ctaButtonPrimary {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.ctaButtonPrimary:hover {
+    background-color: #e0e0e0;
+}
+  
+.ctaButtonSecondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.ctaButtonSecondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+  
+.heroVisual {
+    /* width: 40%; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.redactCircle {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.pulseCircle {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: rgba(130, 130, 133, 0.1);
+    animation: pulse 2s infinite;
+}
+  
+.pulseCircle:nth-child(2) {
+    animation-delay: 0.8s;
+}
+  
+.pulseCircle:nth-child(3) {
+  animation-delay: 1.5s;
+}
+  
+.pulseCircle:nth-child(4) {
+    animation-delay: 2s;
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    70% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+  
+  @media (max-width: 1024px) {
+    .heroSection {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .heroText, .heroVisual {
+        max-width: 100%;
+        width: 100%;
+    }
+  
+    .heroVisual {
+        margin-top: 2rem;
+    }
+  
+    .ctaButtons {
+        justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+  
+    .brandName {
+        font-size: 4rem;
+    }
+  
+    .heroSubtitle, .heroDescription {
+        font-size: 1rem;
+    }
+  }
+  
+  /* *****************Inner Animation************************ */
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .p1Container {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    animation: rotateClockwise 8s linear infinite;
+  }
+  
+  .p2Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    animation: rotateCounterClockwise 10s linear infinite;
+  }
+  
+  .p3Container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+  }
+  
+  .p1, .p2, .p3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @keyframes rotateClockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateCounterClockwise {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(-180deg);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  .team{
+    margin-top: 4rem;
+  }
+
+  .teamTitle{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .teamCard{
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: auto auto auto auto; */
+    gap: 1rem;
+  }
+
+  .card{
+    min-width: 5rem;
+    max-width: 5rem;
+  }

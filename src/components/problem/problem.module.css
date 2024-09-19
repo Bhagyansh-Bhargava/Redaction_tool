@@ -1,0 +1,122 @@
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* bg-design */
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(21, 24, 38, 0.50) 0%, rgba(21, 24, 38, 0.60) 100%);
+    box-shadow: -10px 10px 15.9px 0px rgba(134, 190, 231, 0.25);
+    filter: blur(0.25px);
+    backdrop-filter: blur(4px);
+  }
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    min-width: 15rem;
+}
+
+.miniContainer{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prblm{
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.prblmText{
+    padding: 0.75rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.point{
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 24rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.point:hover{
+    padding: 2rem 1rem;
+    background-color: #2c2c2f86;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dragComp {
+    position: relative;
+    width: 50rem;
+    height: 10rem;
+}
+
+.drag{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dragText1, .dragText2, .dragText3, .dragText4{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    background: #49C2CA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #12393C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease;
+    user-select: none;
+}
+
+.dragText1:hover, .dragText2:hover, .dragText3:hover, .dragText4:hover{
+    transform: rotateX(15deg) rotateY(25deg);
+    margin: 1rem 0;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dragText2{
+    background: #49CA75;
+    color: #164124;
+}
+
+.dragText3{
+    background: #A849CA;
+    color: #381744;
+}
+
+.dragText4{
+    background: #CA7049;
+    color: #45271A;
+}
